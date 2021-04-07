@@ -1,0 +1,9 @@
+<p>Please Login</p>
+<div class="form-group">
+  <input type='text' placeholder="Email Address" class='form-control' name="name" ng-model="formData.email">
+  <br>
+  <input type="password" class="form-control" placeholder="Password" name="password" ng-model="formData.password">
+</div>
+
+<a ng-click="signup(formData)" class="btn btn-block btn-info">Signup</a>
+<a ui-sref="login">Login</a>

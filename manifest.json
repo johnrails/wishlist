@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Wishly",
+  "description": "Create wishlist from any ecommerce website",
+  "version": "0.01",
+  "content_scripts": [
+    {
+      "matches": ["https://www.amazon.com/*", "https://www.target.com/*"],
+      "js": ["js/lib/jquery.min.js", "js/app/content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["js/lib/jquery.min.js", "js/app/background.js"]
+  },
+  "permissions": [ 
+  "tabs"
+],
+  "browser_action": {
+    "default_popup": "views/popup.html"
+  }
+}
